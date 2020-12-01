@@ -1,0 +1,34 @@
+<GDInfos>
+<GDInfo name="lng_en" class="GDGameLanguage">
+        <components>
+            <comp class="CProperties">
+                <display_name>English</display_name>
+                <language_code>en-US</language_code>  
+            </comp>
+        </components>
+        <gstr name="GDEquipment_VehicleAttribute.ei_v_turboengine_1.name">Improved Turbo Engine</gstr>
+        <gstr name="GDEquipment_VehicleAttribute.ei_v_turboengine_1.desc">Movement Speed {0}%</gstr>
+        <gstr name="GDEquipment_VehicleAttribute.ei_v_turboengine_2.name">Advanced Turbo Engine</gstr>
+        <gstr name="GDEquipment_VehicleAttribute.ei_v_turboengine_2.desc">Movement Speed {0}%</gstr>
+        <gstr name="GDEquipment_VehicleAttribute.ei_v_turboengine_3.name">Elite Turbo Engine</gstr>
+        <gstr name="GDEquipment_VehicleAttribute.ei_v_turboengine_3.desc">Movement Speed {0}%</gstr>
+        <gstr name="GDEquipment_VehicleAttribute.ei_v_turboengine_cr.name">Creative Turbo Engine</gstr>
+        <gstr name="GDEquipment_VehicleAttribute.ei_v_turboengine_cr.desc">Movement Speed {0}%</gstr>
+        <gstr name="GDMapPOI.poi_ei_v_turboengine_1.name">Cave Entrance</gstr>
+        <gstr name="GDMapPOI.poi_ei_v_turboengine_1.desc">A Large cave entrance that you could fit a truck through.</gstr>
+        <gstr name="GDMapPOI.poi_ei_v_turboengine_2.name">Cave Entrance</gstr>
+        <gstr name="GDMapPOI.poi_ei_v_turboengine_2.desc">A Large cave entrance that you could fit a truck through.</gstr>
+        <gstr name="GDMapPOI.poi_ei_v_turboengine_3.name">Cave Entrance</gstr>
+        <gstr name="GDMapPOI.poi_ei_v_turboengine_3.desc">A Large cave entrance that you could fit a truck through.</gstr>
+        <gstr name="GDDiscoveryItem.dscitm_bpet2_ei_v_turboengine_1.name">Improved Turbo Engine Blueprint</gstr>
+        <gstr name="GDDiscoveryItem.dscitm_bpet2_ei_v_turboengine_1.desc">Blueprint for the improved turbo engine.</gstr>
+        <gstr name="GDDiscoveryItem.dscitm_bpet2_ei_v_turboengine_2.name">Advanced Turbo Engine Blueprint</gstr>
+        <gstr name="GDDiscoveryItem.dscitm_bpet2_ei_v_turboengine_2.desc">Blueprint for the advanced turbo engine.</gstr>
+        <gstr name="GDDiscoveryItem.dscitm_bpet2_ei_v_turboengine_3.name">Elite Turbo Engine Blueprint</gstr>
+        <gstr name="GDDiscoveryItem.dscitm_bpet2_ei_v_turboengine_3.desc">Blueprint for the elite turbo engine.</gstr>
+
+
+    </GDInfo>
+
+
+</GDInfos>

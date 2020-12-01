@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GDInfos>
+<!-- setup equipment -->
+    <GDInfo name="ei_v_turboengine_1" class="GDEquipment_VehicleAttribute">
+        <comp class="CProperties">
+            <tags>v_engine</tags>
+            <ui_icon>Items/IconVehicleEngine1</ui_icon>
+            <rarity>ir_common</rarity>
+            <type>it_vehicle_equipment</type>
+            <attribute_effect>ae_ei_v_turboengine_1</attribute_effect>
+        </comp>
+    </GDInfo>
+    
+    <GDInfo name="ei_v_turboengine_2" class="GDEquipment_VehicleAttribute">
+        <comp class="CProperties">
+            <tags>v_engine</tags>
+            <ui_icon>Items/IconVehicleEngine2</ui_icon>
+            <rarity>ir_uncommon</rarity>
+            <type>it_vehicle_equipment</type>
+            <attribute_effect>ae_ei_v_turboengine_2</attribute_effect>
+        </comp>
+    </GDInfo>
+    
+    <GDInfo name="ei_v_turboengine_3" class="GDEquipment_VehicleAttribute">
+        <comp class="CProperties">
+            <tags>v_engine</tags>
+            <ui_icon>Items/IconVehicleEngine3</ui_icon>
+            <rarity>ir_rare</rarity>
+            <type>it_vehicle_equipment</type>
+            <attribute_effect>ae_ei_v_turboengine_3</attribute_effect>
+        </comp>
+    </GDInfo>
+
+    <GDInfo name="ei_v_turboengine_cr" class="GDEquipment_VehicleAttribute">
+        <comp class="CProperties">
+            <tags>v_engine</tags>
+            <ui_icon>Items/IconVehicleEngine3</ui_icon>
+            <rarity>ir_rare</rarity>
+            <type>it_vehicle_equipment</type>
+            <attribute_effect>ae_ei_v_turboengine_cr</attribute_effect>
+        </comp>
+    </GDInfo>
+
+<!-- Setup the attribute effect -->
+    <GDInfo name="ae_ei_v_turboengine_1" class="GDAttributeEffect">
+        <components>
+            <comp class="CProperties">
+                <attribute_id>va_movespeed</attribute_id>
+                <type type="enum:EAttrEffectType">Offset</type>
+                <mode type="enum:EAttrEffectMode">Multiply</mode>
+                <target type="enum:EAttrEffectTarget">Current</target>
+                <value>2.5</value>
+            </comp>
+        </components>
+    </GDInfo>
+    
+    <GDInfo name="ae_ei_v_turboengine_2" class="GDAttributeEffect">
+        <components>
+            <comp class="CProperties">
+                <attribute_id>va_movespeed</attribute_id>
+                <type type="enum:EAttrEffectType">Offset</type>
+                <mode type="enum:EAttrEffectMode">Multiply</mode>
+                <target type="enum:EAttrEffectTarget">Current</target>
+                <value>3</value>
+            </comp>
+        </components>
+    </GDInfo>
+    
+    <GDInfo name="ae_ei_v_turboengine_3" class="GDAttributeEffect">
+        <components>
+            <comp class="CProperties">
+                <attribute_id>va_movespeed</attribute_id>
+                <type type="enum:EAttrEffectType">Offset</type>
+                <mode type="enum:EAttrEffectMode">Multiply</mode>
+                <target type="enum:EAttrEffectTarget">Current</target>
+                <value>3.5</value>
+            </comp>
+        </components>
+    </GDInfo>
+
+    <GDInfo name="ae_ei_v_turboengine_cr" class="GDAttributeEffect">
+        <components>
+            <comp class="CProperties">
+                <attribute_id>va_movespeed</attribute_id>
+                <type type="enum:EAttrEffectType">Offset</type>
+                <mode type="enum:EAttrEffectMode">Multiply</mode>
+                <target type="enum:EAttrEffectTarget">Current</target>
+                <value>10</value>
+            </comp>
+        </components>
+    </GDInfo>
+
+<!-- Setup the blueprints -->
+    <GDInfo name="dscitm_bpet2_ei_v_turboengine_1" class="GDDiscoveryItem">
+        <components>
+            <comp class="CProperties">
+                <ui_icon>Items/IconBlueprint</ui_icon>
+                <group_id>dscgrp_blueprints_vequip_t2</group_id>
+            </comp>
+        </components>
+    </GDInfo>
+
+    <GDInfo name="dscitm_bpet2_ei_v_turboengine_2" class="GDDiscoveryItem">
+        <components>
+            <comp class="CProperties">
+                <ui_icon>Items/IconBlueprint</ui_icon>
+                <group_id>dscgrp_blueprints_vequip_t2</group_id>
+            </comp>
+        </components>
+    </GDInfo>
+
+    <GDInfo name="dscitm_bpet2_ei_v_turboengine_3" class="GDDiscoveryItem">
+        <components>
+            <comp class="CProperties">
+                <ui_icon>Items/IconBlueprint</ui_icon>
+                <group_id>dscgrp_blueprints_vequip_t2</group_id>
+            </comp>
+        </components>
+    </GDInfo>
+
+<!-- Research -->
+    <GDInfo name="rsch_rec_ei_v_turboengine_1" class="GDResearch">
+        <components>
+            <comp class="CProperties">
+                <dname_id>GDEquipment_VehicleAttribute.ei_v_turboengine_1.name</dname_id>
+                <desc_id></desc_id>
+                <cost type="PurchaseCost">
+                    <currency id="currency_research">100</currency>
+                    <currency id="currency_techfragments">50</currency>
+                </cost>
+                <type>recipe</type>
+                <ui_icon>Items/IconVehicleEngine1</ui_icon>
+                <research_needed>rsch_techprinting</research_needed>
+                <required_discoveries>dscitm_bpet2_ei_v_turboengine_1</required_discoveries>
+                <research_group>rsch_grp_techprinter.vequipment</research_group>
+            </comp>
+        </components>
+    </GDInfo>
+
+    <GDInfo name="rsch_rec_ei_v_turboengine_2" class="GDResearch">
+        <components>
+            <comp class="CProperties">
+                <dname_id>GDEquipment_VehicleAttribute.ei_v_turboengine_2.name</dname_id>
+                <desc_id></desc_id>
+                <cost type="PurchaseCost">
+                    <currency id="currency_research">200</currency>
+                    <currency id="currency_techfragments">150</currency>
+                </cost>
+                <type>recipe</type>
+                <ui_icon>Items/IconVehicleEngine2</ui_icon>
+                <research_needed>rsch_techprinting</research_needed>
+                <required_discoveries>dscitm_bpet2_ei_v_turboengine_2</required_discoveries>
+                <research_group>rsch_grp_techprinter.vequipment</research_group>
+            </comp>
+        </components>
+    </GDInfo>
+
+    <GDInfo name="rsch_rec_ei_v_turboengine_3" class="GDResearch">
+        <components>
+            <comp class="CProperties">
+                <dname_id>GDEquipment_VehicleAttribute.ei_v_turboengine_3.name</dname_id>
+                <desc_id></desc_id>
+                <cost type="PurchaseCost">
+                    <currency id="currency_research">300</currency>
+                    <currency id="currency_techfragments">250</currency>
+                </cost>
+                <type>recipe</type>
+                <ui_icon>Items/IconVehicleEngine3</ui_icon>
+                <research_needed>rsch_techprinting</research_needed>
+                <required_discoveries>dscitm_bpet2_ei_v_turboengine_3</required_discoveries>
+                <research_group>rsch_grp_techprinter.vequipment</research_group>
+            </comp>
+        </components>
+    </GDInfo>
+
+<!-- loot table for discoveries -->
+    <GDInfo name="ltable_cs_ei_v_turboengine_1" class="GDLootTable">
+        <p duplicates="false" num_rounds="1" zero_probability="10" />
+        <item probability="0" id="dscitm_bpet2_ei_v_turboengine_1" required="true" count="1" />
+        <item probability="100" id="ltable_techfragments" count="3" />
+    </GDInfo>
+
+    <GDInfo name="ltable_cs_ei_v_turboengine_2" class="GDLootTable">
+        <p duplicates="false" num_rounds="1" zero_probability="10" />
+        <item probability="0" id="dscitm_bpet2_ei_v_turboengine_2" required="true" count="1" />
+        <item probability="100" id="ltable_techfragments" count="3" />
+    </GDInfo>
+
+    <GDInfo name="ltable_cs_ei_v_turboengine_3" class="GDLootTable">
+        <p duplicates="false" num_rounds="1" zero_probability="10" />
+        <item probability="0" id="dscitm_bpet2_ei_v_turboengine_3" required="true" count="1" />
+        <item probability="100" id="ltable_techfragments" count="3" />
+    </GDInfo>
+
+<!-- setup POI data -->
+    <GDInfo name="poi_ei_v_turboengine_1" class="GDMapPOI">
+        <comp class="CProperties">
+            <story_id>cs_ei_v_turboengine_1</story_id>
+            <biomes_whitelist>pbiome_subtropicaldesert/pbiome_chaparral/pbiome_tropicalgrassland/pbiome_borealdesert/pbiome_borealrainforest/pbiome_tundraarctic</biomes_whitelist>
+            <repeatable>false</repeatable>    
+            <appear_multiple>false</appear_multiple>
+            <map_entity>spoi_cave_gen</map_entity>   
+            <num_to_spawn>2</num_to_spawn>
+        </comp>
+    </GDInfo>
+
+    <GDInfo name="poi_ei_v_turboengine_2" class="GDMapPOI">
+        <comp class="CProperties">
+            <story_id>cs_ei_v_turboengine_2</story_id>
+            <biomes_whitelist>pbiome_subtropicaldesert/pbiome_chaparral/pbiome_tropicalgrassland/pbiome_borealdesert/pbiome_borealrainforest/pbiome_tundraarctic</biomes_whitelist>
+            <repeatable>false</repeatable>    
+            <appear_multiple>false</appear_multiple>
+            <map_entity>spoi_cave_gen</map_entity>   
+            <num_to_spawn>2</num_to_spawn>
+        </comp>
+    </GDInfo>
+
+    <GDInfo name="poi_ei_v_turboengine_3" class="GDMapPOI">
+        <comp class="CProperties">
+            <story_id>cs_ei_v_turboengine_3</story_id>
+            <biomes_whitelist>pbiome_subtropicaldesert/pbiome_chaparral/pbiome_tropicalgrassland/pbiome_borealdesert/pbiome_borealrainforest/pbiome_tundraarctic</biomes_whitelist>
+            <repeatable>false</repeatable>    
+            <appear_multiple>false</appear_multiple>
+            <map_entity>spoi_cave_gen</map_entity>   
+            <num_to_spawn>2</num_to_spawn>
+        </comp>
+    </GDInfo>
+
+    <GDInfo name="cs_ei_v_turboengine_1" class="GDStory">
+        <comp class="CProperties">
+            <scope type="enum:EStoryType">Expedition</scope>
+            <dname_id>GDMapPOI.poi_ei_v_turboengine_1.name</dname_id>
+        </comp>
+        <comp class="CStoryNode" id="root">
+            <line>The expedition team arrives at a rather large Cave. While searching the cave, they find an entrance leading to a an underground garage with vehicle bays that indicate this was an R&amp;D. There are a few rusted vehicles here that may contain some valuable equipment or blueprints.</line>
+            <result handler="SRH_LootTable">
+                <loot_table>ltable_cs_ei_v_turboengine_1</loot_table>
+            </result>
+            <choice to="--end">Leave</choice>
+        </comp>
+    </GDInfo>
+
+    <GDInfo name="cs_ei_v_turboengine_2" class="GDStory">
+        <comp class="CProperties">
+            <scope type="enum:EStoryType">Expedition</scope>
+            <dname_id>GDMapPOI.poi_ei_v_turboengine_2.name</dname_id>
+        </comp>
+        <comp class="CStoryNode" id="root">
+            <line>The expedition team arrives at a rather large Cave. While searching the cave, they find an entrance leading to a an underground garage with vehicle bays that indicate this was an R&amp;D. There are a few rusted vehicles here that may contain some valuable equipment or blueprints.</line>
+            <result handler="SRH_LootTable">
+                <loot_table>ltable_cs_ei_v_turboengine_2</loot_table>
+            </result>
+            <choice to="--end">Leave</choice>
+        </comp>
+    </GDInfo>
+
+    <GDInfo name="cs_ei_v_turboengine_3" class="GDStory">
+        <comp class="CProperties">
+            <scope type="enum:EStoryType">Expedition</scope>
+            <dname_id>GDMapPOI.poi_ei_v_turboengine_3.name</dname_id>
+        </comp>
+        <comp class="CStoryNode" id="root">
+            <line>The expedition team arrives at a rather large Cave. While searching the cave, they find an entrance leading to an underground garage with vehicle bays that indicate this was an R&amp;D facility. There are a few rusted vehicles here that may contain some valuable equipment or blueprints.</line>
+            <result handler="SRH_LootTable">
+                <loot_table>ltable_cs_ei_v_turboengine_3</loot_table>
+            </result>
+            <choice to="--end">Leave</choice>
+        </comp>
+    </GDInfo>
+
+<!-- setup the recipes -->
+    <GDInfo name="recipe_ei_v_turboengine_1" class="GDRecipe">
+        <components>
+            <comp class="CProperties">
+                <craft_time>25</craft_time>
+                <output_item_id>ei_v_turboengine_1</output_item_id>
+                <output_item_count>1</output_item_count>
+                <input_items type="Inventory">
+                    <item qty="5">res_titanium</item>
+                    <item qty="5">res_processor</item>
+                    <item qty="10">res_steel</item>
+                    <item qty="15">res_mechparts</item>
+                    <item qty="5">res_electronics</item>
+                </input_items>
+                <ingredients type="Ingredients">
+                    <slot>
+                        <ids>
+                            <i qty="5">res_titanium</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="5">res_processor</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="10">res_steel</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="15">res_mechparts</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="5">res_electronics</i>
+                        </ids>
+                    </slot>
+                </ingredients>
+                <craft_station>tech_printer</craft_station>
+                <profession>prof_engineer</profession>
+                <research_needed>rsch_rec_ei_v_turboengine_1</research_needed>
+                <ui_icon>Icons/IconRecipe</ui_icon>
+                <group>t1_printtech</group>
+            </comp>
+        </components>
+    </GDInfo>
+
+    <GDInfo name="recipe_ei_v_turboengine_2" class="GDRecipe">
+        <components>
+            <comp class="CProperties">
+                <craft_time>30</craft_time>
+                <output_item_id>ei_v_turboengine_2</output_item_id>
+                <output_item_count>1</output_item_count>
+                <input_items type="Inventory">
+                    <item qty="10">res_titanium</item>
+                    <item qty="10">res_processor</item>
+                    <item qty="15">res_steel</item>
+                    <item qty="15">res_mechparts</item>
+                    <item qty="10">res_hardenedmechparts</item>
+                    <item qty="10">res_electronics</item>
+                </input_items>
+                <ingredients type="Ingredients">
+                    <slot>
+                        <ids>
+                            <i qty="10">res_titanium</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="10">res_processor</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="15">res_steel</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="15">res_mechparts</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="10">res_hardenedmechparts</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="10">res_electronics</i>
+                        </ids>
+                    </slot>
+                </ingredients>
+                <craft_station>tech_printer</craft_station>
+                <profession>prof_engineer</profession>
+                <research_needed>rsch_rec_ei_v_turboengine_2</research_needed>
+                <ui_icon>Icons/IconRecipe</ui_icon>
+                <group>t1_printtech</group>
+            </comp>
+        </components>
+    </GDInfo>
+
+    <GDInfo name="recipe_ei_v_turboengine_3" class="GDRecipe">
+        <components>
+            <comp class="CProperties">
+                <craft_time>35</craft_time>
+                <output_item_id>ei_v_turboengine_3</output_item_id>
+                <output_item_count>1</output_item_count>
+                <input_items type="Inventory">
+                    <item qty="15">res_titanium</item>
+                    <item qty="15">res_processor</item>
+                    <item qty="20">res_steel</item>
+                    <item qty="15">res_mechparts</item>
+                    <item qty="15">res_hardenedmechparts</item>
+                    <item qty="10">res_electronics</item>
+                </input_items>
+                <ingredients type="Ingredients">
+                    <slot>
+                        <ids>
+                            <i qty="15">res_titanium</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="15">res_processor</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="20">res_steel</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="15">res_mechparts</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="15">res_hardenedmechparts</i>
+                        </ids>
+                    </slot>
+                    <slot>
+                        <ids>
+                            <i qty="10">res_electronics</i>
+                        </ids>
+                    </slot>
+                </ingredients>
+                <craft_station>tech_printer</craft_station>
+                <profession>prof_engineer</profession>
+                <research_needed>rsch_rec_ei_v_turboengine_3</research_needed>
+                <ui_icon>Icons/IconRecipe</ui_icon>
+                <group>t1_printtech</group>
+            </comp>
+        </components>
+    </GDInfo>
+
+</GDInfos>
